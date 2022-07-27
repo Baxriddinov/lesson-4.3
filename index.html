@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>4.3 2 - section</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="first-wrap">
+                <div class="item-first item">
+                    <a onclick="mainTitle()" href="#">
+                        <span>1</span>
+                        <p>Choose title</p>
+                    </a>
+                </div>
+                <div class="item-second item">
+                    <a onclick="description()" href="#">
+                        <span class="span-first">2</span>
+                        <p class="paragraph-first">Choose description</p>
+                    </a>
+                </div>
+                <div class="item-third item">
+                    <a onclick="confirm()" href="#">
+                        <span class="span-second">3</span>
+                        <p class="paragraph-second">Confirm data</p>
+                    </a>
+                </div>
+            </div>
+            <div class="second-wrap">
+                <p class="main-title">Choose the title content</p>
+                <button onclick="description()" id="idbut-first" class="button-first" type="submit">Submit title</button>
+                <div class="description">
+                    <button onclick="mainTitle()" id="idbut-second" class="button-second button" type="submit">Back</button>
+                    <button onclick="confirm()" id="idbut-third" class="button-third button" type="submit">Submit description</button>
+                </div>
+                <button onclick="description()" id="idbut-fourth" class="button-fourth button" type="submit">No, go back</button>
+                <button onclick="finish()" id="idbut-fifth" class="button-fifth button" type="submit">Yes, go ahead</button>
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
